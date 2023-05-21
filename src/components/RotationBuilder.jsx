@@ -96,7 +96,9 @@ const RotationBuilder = () => {
   return (
     <div>
       <CharacterSelector onCharacterSelect={handleCharacterSelect} />
-      <button onClick={() => resetCharactersOnTeam()}>Reset Team</button>
+      <div className='reset-tools'>
+        <button onClick={() => resetCharactersOnTeam()} className='reset-button'>Reset Team</button>
+      </div>
       <div className='character-turn-display'>
         <SelectedCharacters characterList={selectedCharacters} adjustSpeed={adjustSpeed} />
         <ActionController characterList={selectedCharacters} updateCharActions={AVListUpdate}/>

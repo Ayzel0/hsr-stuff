@@ -3,3 +3,23 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
+
+.reset-button {
+    border: 2px solid #777;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-family: monospace;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #888;
+}
+
+.reset-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0;
+}

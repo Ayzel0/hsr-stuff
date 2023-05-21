@@ -40,7 +40,7 @@ const ActionController = ( {characterList, updateCharActions} ) => {
           charStats.map((character, index) => {
             if (index === 0) {
               return (
-                <div key={index}>
+                <div key={index} className='acting-character'>
                   <p>Acting Character: {character.name}</p>
                   <p>Current Action Value: {character.currentAV - charStats[0].currentAV}</p>
                   <p>Previous Action Value: {character.currentAV}</p>
@@ -49,7 +49,7 @@ const ActionController = ( {characterList, updateCharActions} ) => {
               )
             } else {
               return (
-                <div key={index}>
+                <div key={index} className='non-acting-character'>
                   <p>Character: {character.name}</p>
                   <p>Current Action Value: {character.currentAV - charStats[0].currentAV}</p>
                   <p>Previous Action Value: {character.currentAV}</p>

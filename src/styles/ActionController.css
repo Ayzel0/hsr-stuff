@@ -5,3 +5,13 @@
 .action-controller h1 {
     text-align: center;
 }
+
+.acting-character {
+    background: #33193b;
+    padding: 1em;
+}
+
+.non-acting-character {
+    background: #1a2231;
+    padding: 1em;
+}
