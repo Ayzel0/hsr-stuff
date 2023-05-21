@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Jing Yuan",
+        "speed": 99,
+        "rarity": 5
+    },
+    {
+        "name": "Seele",
+        "speed": 115,
+        "rarity": 5
+    },
+    {
+        "name": "Himeko",
+        "speed": 96,
+        "rarity": 5
+    }, 
+    {
+        "name": "Welt",
+        "speed": 102,
+        "rarity": 5
+    },
+    {
+        "name": "Bronya",
+        "speed": 99,
+        "rarity": 5
+    },
+    {
+        "name": "Clara",
+        "speed": 90,
+        "rarity": 5
+    },
+    {
+        "name": "Yanqing",
+        "speed": 109,
+        "rarity": 5
+    },
+    {
+        "name": "Bailu",
+        "speed": 98,
+        "rarity": 5
+    },
+    {
+        "name": "Physical Trailblazer",
+        "speed": 100,
+        "rarity": 5
+    },
+    {
+        "name": "Fire Trailblazer",
+        "speed": 95,
+        "rarity": 5
+    },
+    {
+        "name": "March 7th",
+        "speed": 101,
+        "rarity": 4
+    },
+    {
+        "name": "Dan Heng",
+        "speed": 110,
+        "rarity": 4
+    },
+    {
+        "name": "Arlan",
+        "speed": 102,
+        "rarity": 4
+    },
+    {
+        "name": "Asta",
+        "speed": 106,
+        "rarity": 4
+    },
+    {
+        "name": "Herta",
+        "speed": 100,
+        "rarity": 4
+    },
+    {
+        "name": "Serval",
+        "speed": 104,
+        "rarity": 4
+    },
+    {
+        "name": "Natasha",
+        "speed": 98,
+        "rarity": 4
+    },
+    {
+        "name": "Pela",
+        "speed": 105,
+        "rarity": 4
+    },
+    {
+        "name": "Sampo",
+        "speed": 102,
+        "rarity": 4
+    },
+    {
+        "name": "Hook",
+        "speed": 94,
+        "rarity": 4
+    },
+    {
+        "name": "Qingque",
+        "speed": 98,
+        "rarity": 4
+    },
+    {
+        "name": "Tingyun",
+        "speed": 112,
+        "rarity": 4
+    },
+    {
+        "name": "Sushang",
+        "speed": 107,
+        "rarity": 4
+    }
+]

@@ -1,0 +1,22 @@
+.character {
+    background: inherit;
+}
+
+.selected-characters {
+    background: #111;
+}
+
+.selected-characters p {
+    font-size: 1.25em;
+    
+}
+
+.selected-characters h1 {
+    color: white;
+    text-align: center;
+}
+
+.speed-adjust-input {
+    display: flex;
+    flex-direction: row;
+}

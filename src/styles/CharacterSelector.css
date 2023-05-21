@@ -1,0 +1,37 @@
+:root {
+    --char-icon-box-height: 100px;
+    --char-icon-box-width: 75px;
+}
+
+.selector-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* this creates as many 200px columns as will fit in the container, and scales them to take up any remaining space */
+    grid-gap: 10px; /* adjust for desired spacing between boxes */
+    grid-auto-rows: var(--char-icon-box-height);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.character-select-box {
+    background-color: rgb(30, 19, 43);
+    color: white;
+    padding: 15px 20px;
+    border: 5px solid rgb(107, 83, 136);
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.character-select-box:hover {
+    background-color: rgb(92, 58, 130);
+    cursor: pointer;
+}
+
+.character-select-box .text {
+    text-align: center;
+    font-family: monospace; 
+}
