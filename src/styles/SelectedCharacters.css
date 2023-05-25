@@ -7,8 +7,7 @@
 }
 
 .selected-characters p {
-    font-size: 1.25em;
-    
+    font-size: 1em;
 }
 
 .selected-characters h1 {
@@ -17,6 +16,15 @@
 }
 
 .speed-adjust-input {
-    display: flex;
-    flex-direction: row;
+    display: block;
+}
+
+.speed-adjust-input button {
+    border: none;
+    margin: 0 0.25em;
+    font-size: 1.5em;
+    font-family: monospace;
+    background: #957394;
+    border-radius: 2px;
+    border: 3px solid #e8d7ea; 
 }

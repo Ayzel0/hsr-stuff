@@ -18,11 +18,13 @@ const SelectedCharacters = ({ characterList, adjustSpeed, resetTeam }) => {
           <p>{character.name}</p>
           <div className='speed-adjust-input'>
             <p>Starting Speed: {character.speed}</p>
-            <button onClick={() => adjustSpeed(character, -10)}>-10</button>
-            <button onClick={() => adjustSpeed(character, -1)}>-1</button>
-            <button onClick={() => adjustSpeed(character, 1)}>+1</button>
-            <button onClick={() => adjustSpeed(character, 10)}>+10</button>
-            <button onClick={() => adjustSpeed(character, findCharacterSpeed(character.name) - character.speed)}>Reset</button>
+            <div>
+              <button onClick={() => adjustSpeed(character, -10)}>-10</button>
+              <button onClick={() => adjustSpeed(character, -1)}>-1</button>
+              <button onClick={() => adjustSpeed(character, 1)}>+1</button>
+              <button onClick={() => adjustSpeed(character, 10)}>+10</button>
+              <button onClick={() => adjustSpeed(character, findCharacterSpeed(character.name) - character.speed)}>Reset</button>
+            </div>
           </div>
         </div>
       ))}
