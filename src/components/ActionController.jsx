@@ -21,7 +21,7 @@ const ActionController = ( {characterList, updateCharActions} ) => {
 
     let newActionValues = [...charStats];
 
-    // Subtract AV_amt from every character's currentAV, and add AV_amt to the first character's currentAV.
+    // Subtract AV_amt from every character's currentAV, and add AV_amt to the first character's currentAV
     newActionValues = newActionValues.map((character, index) => ({
       ...character,
       currentAV: index === 0 ? 10000/character.speed : character.currentAV - AV_amt,
@@ -45,6 +45,7 @@ const ActionController = ( {characterList, updateCharActions} ) => {
                   <p>Current Action Value: {character.currentAV - charStats[0].currentAV}</p>
                   <p>Previous Action Value: {character.currentAV}</p>
                   <button onClick={() => advanceAction(charStats[0].currentAV)}>Take Action</button>
+                  <button>Increase Speed by:</button>
                 </div>
               )
             } else {

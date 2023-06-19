@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/SelectedCharacters.css';
 import charBaseStats from '../data/charBaseStats.json';
 
-const SelectedCharacters = ({ characterList, adjustSpeed, resetTeam }) => {
+const SelectedCharacters = ({ characterList, adjustSpeed, finalizeTeam }) => {
   const findCharacterSpeed = (characterName) => {
     const character = charBaseStats.find((char) => char.name === characterName);
     if(character) {
@@ -28,6 +28,7 @@ const SelectedCharacters = ({ characterList, adjustSpeed, resetTeam }) => {
           </div>
         </div>
       ))}
+      <button onClick={() => finalizeTeam()}>Finalize Characters</button>
     </div>
   )
 }

@@ -8,6 +8,7 @@ import '../styles/RotationBuilder.css';
 
 const RotationBuilder = () => {
   const [selectedCharacters, setSelectedCharacters] = useState([]);
+  const [finalCharacters, setFinalCharacters] = useState([]);
   const [characterActions, setCharacterActions] = useState([]);
   const [bins, setBins] = useState([
     {
@@ -54,6 +55,7 @@ const RotationBuilder = () => {
 
   const resetCharactersOnTeam = () => {
     setSelectedCharacters([]);
+    setFinalCharacters([]);
     setCharacterActions([]);
     resetBins();
   }
@@ -93,6 +95,10 @@ const RotationBuilder = () => {
     }
   }
 
+  const finalizeTeam = () => {
+    setFinalCharacters(selectedCharacters);
+  }
+
   return (
     <div>
       <CharacterSelector onCharacterSelect={handleCharacterSelect} />
@@ -100,8 +106,8 @@ const RotationBuilder = () => {
         <button onClick={() => resetCharactersOnTeam()} className='reset-button'>Reset Team</button>
       </div>
       <div className='character-turn-display'>
-        <SelectedCharacters characterList={selectedCharacters} adjustSpeed={adjustSpeed} />
-        <ActionController characterList={selectedCharacters} updateCharActions={AVListUpdate}/>
+        <SelectedCharacters characterList={selectedCharacters} adjustSpeed={adjustSpeed} finalizeTeam={finalizeTeam} />
+        <ActionController characterList={finalCharacters} updateCharActions={AVListUpdate}/>
         <Turns bins={bins} />
       </div>
     </div>
